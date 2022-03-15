@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+header {
+display: flex;
+background: url("https://images.unsplash.com/photo-1570083208073-f0c09ea8dcf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"); 
+background-size: cover;
+background-position: center center;
+color: black;
+justify-content: center;
+flex-direction: column;
+height: 100vh;
+position: relative;
+}
+
+/* para generar la opacidad del banner*/
+header::after {
+ content: " ";
+background-color: #FFE4E1;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0.6;
+
+}
+
+header * {
+position: relative;
+z-index: 1;
+}
+
+header h1 {
+font-size: 50px;
+margin-bottom: 5px;
+ 
+}
+
+
+header p {
+  font-size: 25px;
+  color:darkmagenta;
+}
+
+.name{
+  color: black;
+}
+
+.separador {
+  width: 100%;
+}
+
+body {
+  background-color: #FFDAB9; 
+  font-family: "Gluten";
+  margin: 0
+}
+
+nav {
+  background: #DDA0DD;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid 	#FF0000;
+   border-bottom: 1px solid #FF0000;
+  position: sticky;
+top: 0;
+
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 200px;
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+
+
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+
+
+.michi {
+  display: flex;
+  align-items:  flex-end;
+  width: 10%;
+  height: 10%;
+}
+
+footer{
+  background: #FFC0CB; 
+  padding: 11px;
+}
+
+
+@media (max-width: 440px) {
+.social-ul {
+display: flex;
+}
+}
